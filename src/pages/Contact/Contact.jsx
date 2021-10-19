@@ -202,7 +202,7 @@ export const Contact = () => {
                 {/* form *************** */}
 
                 <form className="contact-form" ref={form} onSubmit={sendEmail}>
-                  <h2>Contactez-nous</h2>
+                  <h2>Contactez-moi</h2>
                   <div className="form-content">
                     <input
                       type="text"

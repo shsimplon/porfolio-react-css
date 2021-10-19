@@ -117,7 +117,7 @@ const Home = () => {
 
   return (
     <>
-      <main >
+      <main>
         <div className="cd-index cd-main-content">
           {/* <!----LEFT-BAR-------> */}
 
@@ -148,7 +148,6 @@ const Home = () => {
 
           {/* <!----RIGHT-BAR-------> */}
           <div className="right-bar-section">
-         
             <div className="right-content-inner d-flex justify-content-between flex-column h-100">
               <div className="ham-section d-flex justify-content-center">
                 <span className="open-menu">
@@ -160,14 +159,17 @@ const Home = () => {
                 <a href="/contact">Contactez-moi</a>
               </div>
               <div className="social-links">
-                <a   target="blank"  href="https://www.linkedin.com/in/samira-houacine/">
+                <a
+                  target="blank"
+                  href="https://www.linkedin.com/in/samira-houacine/"
+                >
                   <FaLinkedinIn />
                 </a>
-                <a  target="blank"  href="https://fr-fr.facebook.com/">
+                <a target="blank" href="https://fr-fr.facebook.com/">
                   <FaFacebookF />
                 </a>
 
-                <a  target="blank" href="https://twitter.com/?lang=fr">
+                <a target="blank" href="https://twitter.com/?lang=fr">
                   <FaTwitter />
                 </a>
               </div>
@@ -201,29 +203,33 @@ const Home = () => {
                         </a>
                       </div>
                     </div>
-                    
+
                     <div className="col-md-4">
                       <div className="navcolumn" id="nav-column-second">
                         <h2>Mes projets</h2>
-                        <a target="blank" 
+                        <a
+                          target="blank"
                           className="cd-btn"
                           href="https://thirsty-brattain-bcadf7.netlify.app/"
                         >
-                         Restaurant
+                          Restaurant
                         </a>
-                        <a target="blank"    
+                        <a
+                          target="blank"
                           className="cd-btn"
                           href="https://sans-gluten.netlify.app/"
                         >
                           Gluten Free
                         </a>
-                        <a target="blank" 
+                        <a
+                          target="blank"
                           className="cd-btn"
-                          href="https://happy-jackson-5629e7.netlify.app/" 
+                          href="https://happy-jackson-5629e7.netlify.app/"
                         >
-                         What watch
+                          What watch
                         </a>
-                        <a target="blank" 
+                        <a
+                          target="blank"
                           className="cd-btn"
                           href="https://samira-houacine-portfolio.netlify.app"
                         >
@@ -235,7 +241,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <Particle/>
+            <Particle />
           </section>
 
           {/* <!----nav-------> */}
@@ -251,7 +257,7 @@ const Home = () => {
                   alt="plane"
                 />
               </div>
-              <Particle style ={{zindex:1000}}/>
+              <Particle style={{ zindex: 1000 }} />
               <div className="bannersplat">
                 <div className="scotty">
                   {/* <img src={scotland} width="" height="" alt="scotland" /> */}
@@ -261,11 +267,10 @@ const Home = () => {
                 <div className="text">
                   <h1>
                     <span className="word d-flex justify-content-center">
-                     {/* Venez */} Embarquez
-                      
+                      {/* Venez */} Embarquez
                     </span>
                     <span className="word d-flex justify-content-center">
-                      {/* decouvrir */}  avec
+                      {/* decouvrir */} avec
                     </span>
                     <span className="word d-flex justify-content-center">
                       {/* mon */} moi
@@ -276,22 +281,30 @@ const Home = () => {
                   </h1>
                 </div>
               </div>
-              <Particle/>
+              <Particle />
               <div className="scroll-indicator">
                 <img src={scrool} className="img-fluid" alt="scrool" />
               </div>
             </div>
-           
+
             <section className="about-section">
-           
               <div className="container-fluid px-sm-0 p-0">
                 <div className="row d-flex  justify-content-center">
                   <div className="col-md-7">
                     <div className="abouttext" id="about" data-aos="fade-up">
                       <h2>Salut, Je m'appelle Samira</h2>
                       <p>
-                      En 2020, j'ai décidé d'entamer un processus de reconversion professionnelle dans la programmation informatique, véritable passion depuis plusieurs années. J'ai plus de trois ans d'expérience dans le secteur de la biologie et de l'enseignement. Mes expériences précédentes, mon
-                    esprit d’équipe, le goût du challenge, l’envie de bien faire et ma facilité d'adaptation sont des atouts pour mener à bien les projets futurs en développement web 
+                        En 2020, j'ai décidé d'entamer un processus de
+                        reconversion professionnelle dans la programmation
+                        informatique, véritable passion depuis plusieurs années.
+                        <br />
+                        J'ai plus de trois ans d'expérience dans le secteur de
+                        la biologie et de l'enseignement.
+                        <br />
+                        Mes expériences précédentes, mon esprit d’équipe, le
+                        goût du challenge, l’envie de bien faire et ma facilité
+                        d'adaptation sont des atouts pour mener à bien les
+                        projets futurs en développement web
                         <br />
                         #FULLSTACK
                       </p>
@@ -300,7 +313,7 @@ const Home = () => {
                 </div>
               </div>
             </section>
-         
+
             <div className="wavy-g"></div>
 
             <section className="about-wrapper">
@@ -326,9 +339,9 @@ const Home = () => {
 
                           <div className=""></div>
                           <h3 className="heading heading-left">
-                             Capacité 
-                             <br />
-                             d'pprendrentissage
+                            Capacité
+                            <br />
+                            d'pprendrentissage
                           </h3>
                         </div>
                       </div>
@@ -391,19 +404,19 @@ const Home = () => {
                           className="worktext text-right"
                           data-aos="fade-left"
                         >
-                          <h3>
-                          Restaurant 
-                          </h3>
+                          <h3>Restaurant</h3>
                           <p>
-                            
                             <br />
-                            Créer une application de recettes de cuisine en utilisant l'API themealdb, JAVASCRIPT, CSS et HTML 
+                            Application qui vous recommande des recettes
+                            sur-mesure selon vos goûts, elle est realisé avec
+                            l'API themealdb, Javascript, CSS et HTML
                             <br />
-                            Le but de ce projet est de faire le CRUD
+                            Le but de ce projet est de faire un CRUD
                           </p>
                           <a
+                            target="blank"
                             className="cd-btn"
-                            href="https://sans-gluten.netlify.app/"
+                            href="https://thirsty-brattain-bcadf7.netlify.app//"
                           >
                             Demo
                           </a>
@@ -426,13 +439,18 @@ const Home = () => {
                         <div className="worktext">
                           <h3 className="worktext-top"> Gluten Free</h3>
                           <p>
-                          C'est un mini réseau social pour les personnes intolérantes au gluten
-                            <br /> Le projet est réaliser avec REACT, SASS, NODEJS, EXPRESS ORM et MYSQL
-                            <br /> Le but de ce projet est de faire une application complete avec un back-end (API REST ) et front-end(React)
+                            Mini réseau social pour les personnes intolérantes
+                            au gluten
+                            <br /> Le projet est réalisé avec React, Sass,
+                            NodeJS, Express, ORM et MySQL
+                            <br /> Le but de ce projet est de faire une
+                            application complete avec un back-end (API REST ) et
+                            un front-end (React)
                           </p>
                           <a
+                            target="blank"
                             className="cd-btn"
-                            href="https://dazzling-golick-98cfbc.netlify.app/"
+                            href="https://sans-gluten.netlify.app/"
                           >
                             Demo
                           </a>
@@ -483,12 +501,15 @@ const Home = () => {
                         <div className="worktext text-right">
                           <h3 className="worktext-top">What watch</h3>
                           <p>
-                         Créer une application mobile avec HTML, CSS & Javascript   [PWA - Progressive Web App] <br />
-                          
+                            Application mobile [PWA - Progressive Web App] avec
+                            HTML, CSS & Javascript <br />
                             <br />
-                            Le but c'est de créer une application qu'on peut télécharger sur android sans passer par un language particulier
+                            Le but est de créer une application qu'on peut
+                            télécharger sur android sans passer par un language
+                            particulier
                           </p>
                           <a
+                            target="blank"
                             className="cd-btn"
                             href="https://happy-jackson-5629e7.netlify.app/"
                           >
@@ -523,13 +544,15 @@ const Home = () => {
                           className="worktext text-right"
                           data-aos="fade-left"
                         >
-                          <h3>Porfolio</h3>
+                          <h3>Portfolio</h3>
                           <p>
-                            Creer mon premier portfolio simple en utilisant React et SASS
+                            Portfolio simple en utilisant React et Sass
                             <br />
-                            Le but de ce projet est d'apprendre React et d'approfondire mes connaissances en SASS
+                            Le but de ce projet est d'apprendre React et
+                            d'approfondire mes connaissances en Sass
                           </p>
                           <a
+                            target="blank"
                             className="cd-btn"
                             href="https://samira-houacine-portfolio.netlify.app"
                           >
@@ -552,17 +575,17 @@ const Home = () => {
                 alt="wave"
               />
             </div>
-        
+
             <section className="contact-wrapper">
               <div className="contact-text" data-aos="fade-right">
                 <h1>
-                   Arrivés à la  <br/>  destination,{" "}
+                  Arrivés à la <br /> destination,{" "}
                   <a className="cd-btn cd-btn-white" href="/contact">
                     Contactez-moi
                   </a>
                 </h1>
               </div>
-              <Particle/>
+              <Particle />
               <div className="bannersplat">
                 <div className="scotty">
                   {/* <img src={scotland} width="" height="" alt="scotland" /> */}
