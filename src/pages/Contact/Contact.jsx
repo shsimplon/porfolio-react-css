@@ -1,5 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useHistory } from "react-router";
+import emailjs from "emailjs-com";
+
 import $ from "jquery";
 
 import "./contact.css";
@@ -9,7 +11,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 //images
 import menu from "../../assets/img/menu.svg";
-import logo from "../../assets/img/Frame 1 (1).png";
+import logo from "../../assets/img/logo.png";
 import airplane from "../../assets/img/contactplane 1.png";
 import fluidDark from "../../assets/img/splatterdark.png";
 
@@ -18,6 +20,34 @@ import Particle from "../../components/Particle";
 
 export const Contact = () => {
   const history = useHistory();
+  const form = useRef();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [company, setCompany] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_8xs3cfv",
+        "template_7qov02b",
+        form.current,
+        "user_YSNgmLruXXfdeJhpbWXuq"
+      )
+      .then(
+        (result) => {
+          document.querySelector(".form-message").innerHTML =
+            "Merci pour le message. Je vous contacterai bientôt !";
+        },
+        (error) => {
+          document.querySelector(".form-message").innerHTML =
+            "Une erreur s'est produite, veuillez réessayer.";
+        }
+      );
+  };
 
   useEffect(() => {
     $(document).ready(function () {
@@ -30,12 +60,6 @@ export const Contact = () => {
       });
     });
   }, []);
-  const handleClick = (e) => {
-    e.preventDefault();
-
-    alert("Merci pour le message. Je vous contacterai bientôt !");
-    history.push("/");
-  };
 
   return (
     <>
@@ -49,14 +73,17 @@ export const Contact = () => {
           </div>
 
           <div className="social-links">
-            <a   target="blank"   href="https://www.linkedin.com/in/samira-houacine/">
+            <a
+              target="blank"
+              href="https://www.linkedin.com/in/samira-houacine/"
+            >
               <FaLinkedinIn />
             </a>
-            <a target="blank"    href="https://fr-fr.facebook.com/">
+            <a target="blank" href="https://fr-fr.facebook.com/">
               <FaFacebookF />
             </a>
 
-            <a   target="blank" href="https://twitter.com/?lang=fr">
+            <a target="blank" href="https://twitter.com/?lang=fr">
               <FaTwitter />
             </a>
           </div>
@@ -110,25 +137,29 @@ export const Contact = () => {
                 <div className="col-md-4">
                   <div className="navcolumn" id="nav-column-second">
                     <h2>Mes projets</h2>
-                    <a  target="blank" 
+                    <a
+                      target="blank"
                       className="cd-btn"
                       href="https://thirsty-brattain-bcadf7.netlify.app/"
                     >
                       Restaurant
                     </a>
-                    <a target="blank" 
+                    <a
+                      target="blank"
                       className="cd-btn"
                       href="https://sans-gluten.netlify.app/"
                     >
                       Gluten free
                     </a>
-                    <a target="blank" 
+                    <a
+                      target="blank"
                       className="cd-btn"
                       href="https://happy-jackson-5629e7.netlify.app/"
                     >
                       What watch
                     </a>
-                    <a target="blank" 
+                    <a
+                      target="blank"
                       className="cd-btn"
                       href="https://samira-houacine-portfolio.netlify.app"
                     >
@@ -149,9 +180,8 @@ export const Contact = () => {
               <div className="bannertxtc2">
                 <div className="paperplane2">
                   <img src={airplane} alt="airplane" />
-                  <Particle/>
                 </div>
-             
+                {/* <Particle /> */}
                 <div className="bannersplat2">
                   <img
                     src={fluidDark}
@@ -160,55 +190,71 @@ export const Contact = () => {
                   />
                   <div className="fluid2 lbdark2"></div>
                 </div>
+
                 <h1 class="fade-in2">Envoyez un message</h1>
-              
               </div>
-             
+
               <div className="scroll2 bounce2"></div>
             </div>
-          
 
             <div className="formholder2">
               <div class="bluewrapcontact2 group2">
-                <form>
-                  <div className="fieldwrap group2">
-                    <div className="formleft">
-                      <h3 className="fieldlabel">Votre nom</h3>
-                      <br />
-                      <input
-                        type="text"
-                        name="cf_name"
-                        id=""
-                        placeholder="Votre nom"
-                      />
-                      <br />
-                    </div>
-                    <div className="formright">
-                      <h3 className="fieldlabel">Votre e-mail</h3>
-                      <br />
-                      <input
-                        type="text"
-                        name="cf_name"
-                        id=""
-                        placeholder="Votre email"
-                      />
-                      <br />
-                    </div>
-                  </div>
-                  <div className="formmessage">
-                    <h3 className="fieldlabel">Votre message</h3>
-                    <br />
-                    <textarea
-                      name="cf_message"
-                      placeholder="votre message"
-                      className="formmessagestyle"
-                    ></textarea>
-                    <br />
-                  </div>
+                {/* form *************** */}
 
-                  <button className="btn-send" onClick={(e) => handleClick(e)}>
-                    Envoyer !
-                  </button>
+                <form className="contact-form" ref={form} onSubmit={sendEmail}>
+                  <h2>Contactez-nous</h2>
+                  <div className="form-content">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      onChange={(e) => setName(e.target.value)}
+                      placeholder="nom *"
+                      value={name}
+                      autoComplete="off"
+                    />
+                    <input
+                      type="text"
+                      id="company"
+                      name="company"
+                      onChange={(e) => setCompany(e.target.value)}
+                      placeholder="société"
+                      value={company}
+                    />
+                    <input
+                      type="text"
+                      id="phone"
+                      name="phone"
+                      onChange={(e) => setPhone(e.target.value)}
+                      placeholder="téléphone"
+                      value={phone}
+                    />
+                    <div className="email-content">
+                      <label id="not-mail">Email non valide</label>
+                      <input
+                        type="mail"
+                        id="email"
+                        name="email"
+                        onChange={(e) => setEmail(e.target.value)}
+                        placeholder="email *"
+                        value={email}
+                        autoComplete="off"
+                      />
+                    </div>
+                    <textarea
+                      id="message"
+                      name="message"
+                      onChange={(e) => setMessage(e.target.value)}
+                      placeholder="message *"
+                      value={message}
+                    />
+                  </div>
+                  <input className="button" type="submit" value="Envoyer" />
+
+                  <div
+                    className="form-message "
+                    style={{ color: "green" }}
+                  ></div>
                 </form>
               </div>
             </div>

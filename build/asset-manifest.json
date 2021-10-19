@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b7de4ca0.chunk.css",
+    "main.js": "/static/js/main.2f0093e7.chunk.js",
+    "main.js.map": "/static/js/main.2f0093e7.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.931e61bc.js",
+    "runtime-main.js.map": "/static/js/runtime-main.931e61bc.js.map",
+    "static/css/2.29c6ae1a.chunk.css": "/static/css/2.29c6ae1a.chunk.css",
+    "static/js/2.25b22f47.chunk.js": "/static/js/2.25b22f47.chunk.js",
+    "static/js/2.25b22f47.chunk.js.map": "/static/js/2.25b22f47.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.29c6ae1a.chunk.css.map": "/static/css/2.29c6ae1a.chunk.css.map",
+    "static/css/main.b7de4ca0.chunk.css.map": "/static/css/main.b7de4ca0.chunk.css.map",
+    "static/js/2.25b22f47.chunk.js.LICENSE.txt": "/static/js/2.25b22f47.chunk.js.LICENSE.txt",
+    "static/media/contact.css": "/static/media/scroll2 .32fdc7f9.svg",
+    "static/media/home.css": "/static/media/wavy.dc130178.png",
+    "static/media/coeur-removebg-preview 1.f67b4928.png": "/static/media/coeur-removebg-preview 1.f67b4928.png",
+    "static/media/contactplane 1.dd4b2e97.png": "/static/media/contactplane 1.dd4b2e97.png",
+    "static/media/film.7051c089.png": "/static/media/film.7051c089.png",
+    "static/media/imageonline-co-overlayed-image (8).a747dea5.png": "/static/media/imageonline-co-overlayed-image (8).a747dea5.png",
+    "static/media/imageonline-co-overlayed-image-2.8a5c57ec.png": "/static/media/imageonline-co-overlayed-image-2.8a5c57ec.png",
+    "static/media/imageonline-co-overlayed-image-4.3298eb06.png": "/static/media/imageonline-co-overlayed-image-4.3298eb06.png",
+    "static/media/lightbulb_-_copie-removebg-preview 1.2dde6331.png": "/static/media/lightbulb_-_copie-removebg-preview 1.2dde6331.png",
+    "static/media/menu.63ac7893.svg": "/static/media/menu.63ac7893.svg",
+    "static/media/plane 1.9e27e57a.png": "/static/media/plane 1.9e27e57a.png",
+    "static/media/scroll.3bad402d.svg": "/static/media/scroll.3bad402d.svg",
+    "static/media/smallear_-_copie-removebg-preview 1.b431cf6d.png": "/static/media/smallear_-_copie-removebg-preview 1.b431cf6d.png",
+    "static/media/splatterdark.5f8fcbea.png": "/static/media/splatterdark.5f8fcbea.png",
+    "static/media/wavy2.53fe6aaf.png": "/static/media/wavy2.53fe6aaf.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.931e61bc.js",
+    "static/css/2.29c6ae1a.chunk.css",
+    "static/js/2.25b22f47.chunk.js",
+    "static/css/main.b7de4ca0.chunk.css",
+    "static/js/main.2f0093e7.chunk.js"
+  ]
+}
